@@ -1,4 +1,5 @@
-<li><a class="idTabs" href="#admin"><img
+<li>
+	<a class="idTabs" href="#admin"><img
 		src="icons/application_side_expand.png" /> Admin</a>
 	<ul class="noJS">
 
@@ -13,7 +14,8 @@
 	href="listemployees.php?page=employees&&user_role=adm&&action=list"><img
 		src="icons/application_view_columns.png" /> Employees</a></li>
 
-<li><a class="idTabs" href="#students"><img
+<li>
+	<a class="idTabs" href="#students"><img
 		src="icons/application_side_expand.png" /> Students</a>
 	<ul class="noJS">
 		<li><a
@@ -22,12 +24,13 @@
 		<li><a
 			href="listparents.php?page=parents&&user_role=adm&&action=list"><img
 				src="icons/application_view_list.png" /> Parents</a></li>
-	</ul></li>
+	</ul>
+</li>
 
 <li><a class="idTabs" href="#marks"><img
 		src="icons/application_side_expand.png" /> Marks</a>
 	<ul class="noJS">
-		<li><a href="listmarks.php?page=marks&&action=list"><img
+		<li><a href="listmark.php?page=marks&&action=list"><img
 				src="icons/application_view_list.png" /> Marks</a></li>
 		<li><a
 			href="listcourses.php?page=courses&&action=list"><img
@@ -38,19 +41,16 @@
 		src="icons/application_side_expand.png" /> Reports</a>
 	<ul class="noJS">
 		<li><a
-			href="liststudents.php?page=reportsearch&&user_role=adm&&action=search"><img
+				href="studentsreport.php?page=studenttxt"><img
 				src="icons/application_view_list.png" /> Students reports</a></li>
 		<li><a
-			href="listcourses.php?page=reportcourses&&user_role=adm&&action=search"><img
+				href="coursesreport.php?page=coursetxt"><img
 				src="icons/application_view_list.png" /> Courses reports </a></li>
 		<li><a
-			href="listmarks.php?page=markssearch&&user_role=adm&&action=search"><img
+				href="marksreport.php?page=markstxt"><img
 				src="icons/application_view_list.png" /> Marks Report</a></li>
 		<li><a
-			href="instructorspdf.php?"><img
-				src="icons/page_white_acrobat.png" /> All Instructors PDF</a></li>
-		<li><a
-			href="Studentspdf.php?"><img
+				href="studentsreportpdf.php?page=studenttxt"><img
 				src="icons/page_white_acrobat.png" /> All Students PDF</a></li>
-	
+
 	</ul></li>

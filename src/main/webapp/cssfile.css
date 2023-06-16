@@ -6,7 +6,7 @@ body {
 }
 
 thead {
-	color: #428BCA;
+	color: #29375A;
 	font-size: 14px;
 }
 
@@ -64,7 +64,7 @@ hr {
 }
 
 #banner {
-	background: url("images/banner_bg.png") repeat-x scroll left top transparent;
+	/*background: url("images/banner_bg.png") repeat-x scroll left top transparent;*/
 	height: 90px;
 	width: 1000px;
 	font-style: normal;
@@ -72,7 +72,7 @@ hr {
 	position: relative;
 }
 .bannerlogo {
-	background: #fff url("images/rcalogo.png") no-repeat;
+	background: #fff url("https://media.licdn.com/dms/image/C560BAQEl6a9tUkSKfg/company-logo_200_200/0/1558604414993?e=2147483647&amp;v=beta&amp;t=liCSw94UkEjwbMZZh8N23ZMYixEAMmZNq2IftvsF97Y") no-repeat;
 	height: 90px;
 	width: 100px;
 	font-style: normal;
@@ -107,7 +107,7 @@ hr {
 	font-style: normal;
 	font-family: georgia;
 	margin-top: 1px;
-	background: #fff url("images/banner_bg.jpg") top repeat-x;
+	/*background: #fff url("images/banner_bg.jpg") top repeat-x;*/
 	border: 1px solid #ccc;
 	border-style: solid solid solid solid;
 }
@@ -126,7 +126,7 @@ hr {
 }
 
 #footer {
-	background: url("images/banner_bg.png") repeat-x scroll left top transparent;
+	/*background: url("images/banner_bg.png") repeat-x scroll left top transparent;*/
 	border: 1px solid #ccc;
 	border-bottom: 1px solid #777;
 	border-style: solid none solid none;
@@ -152,7 +152,7 @@ hr {
 }
 
 a {
-	color: #428BCA;
+	color: #29375A;
 	cursor: pointer;
 	text-decoration: none;
 	padding-left: 5px;
@@ -274,7 +274,7 @@ button:HOVER {
 }
 
 #menu>li>a {
-	color: #428BCA;
+	color: #29375A;
 	font-weight: bold;
 }
 
@@ -286,11 +286,11 @@ button:HOVER {
 /* Submenu
 ------------------------------------------*/
 #menu ul li a {
-	color: #fff;
+	color:#29375A ;
 }
 
 #menu ul li:hover a {
-	background: #428BCA;
+	background: #29375A;
 	color: #fff;
 }
 
@@ -316,7 +316,8 @@ button:HOVER {
 }
 
 #menu ul {
-	background: #218D09;
+	background: white;
+	border:1px solid #29375A ;
 	position: absolute;
 	display: none;
 	z-index: 999;
@@ -352,7 +353,7 @@ ul.primary li.active a,ul.secondary li.active a {
 /* Tabs formating
 ------------------------------------------*/
 ul.tabs {
-	border-bottom: 3px solid #428BCA;
+	border-bottom: 3px solid  #29375A;
 	float: left;
 	list-style: none;
 	margin: 0;
@@ -380,18 +381,18 @@ ul.tabs li a {
 }
 
 ul.tabs li a:hover {
-	background: #428BCA;
+	background:  #29375A;
 	color: #fff;
 }
 
 ul.tabs li.active {
-	background: #428BCA;
+	background:  #29375A;
 	color: #fff;
 }
 
 html ul.tabs li.active,html ul.tabs li.active a:hover,html ul.tabs li.active a
 	{
-	background: #428BCA;
+	background:  #29375A;
 	color: #fff;
 }
 
@@ -431,12 +432,12 @@ html .clear-block {
 fieldset{
   padding-top: 1em;
   padding-bottom: 1em;
-  border: 1px solid #008dd4;
+  border: 1px solid  #29375A;
 }
 
 #middle legend{
   color: #fff;
-  border: 1px solid #008dd4;
+  border: 1px solid  #29375A;
   padding: 1px 5px 0 15px;
-  background: #008dd4 url("images/star.png") left top no-repeat;
+  background:  #29375A url("images/star.png") left top no-repeat;
 }

@@ -223,6 +223,20 @@ public class UserDAOImpl extends DAO implements UserDAO {
 	}
 
 	@Override
+	public List<User> getAllEmployees() {
+		try {
+			begin();
+			Query query = getSession().createQuery("from User where userRole = 1");
+			List<User> users = query.list();
+			commit();
+			return users;
+		} catch (Exception e) {
+			rollback();
+			return null;
+		}
+	}
+
+	@Override
 	public User getUserByDetails(String username, String email, String password) {
 		String name = "";
 		User user = null;

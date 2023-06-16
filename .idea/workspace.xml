@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="rcasmis:war exploded" />
+      <artifact name="rcamis:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,11 +10,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41a2ae45-28aa-4e8b-ad5e-f3006a3bef46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/MarksDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/ParentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/StudentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/impl/AddressDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/impl/MarksDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/impl/ParentDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/impl/StudentDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/orm/Marks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/orm/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/CourseReportTxt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/CreateMarks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/CreateParent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/CreateStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/ListMark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/ListParents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/ListStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/MarksReportTxt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/StudentReportPdf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/StudentReportTxt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/createMarks.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/createParent.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/createStudent.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/employees.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/parents.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/student.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/CreateCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/CreateCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/impl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/dao/impl/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/orm/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/orm/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/ListCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/ListCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/adminmenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/adminmenu.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/courses.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/courses.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/createCourse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/createCourse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/headeradmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/headeradmin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/homeadmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/homeadmin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cssfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cssfile.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +61,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
       </list>
@@ -58,29 +96,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/HP/IdeaProjects/rcasmis/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mac/IdeaProjects/springMVC_RCASMIS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ad6f95b0428a8d18190e3176bab6536e&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/HP/IdeaProjects/rcasmis/src/main/java",
+    "last_opened_file_path": "/Users/mac/IdeaProjects/springMVC_RCASMIS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "ad6f95b0428a8d18190e3176bab6536e",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\IdeaProjects\rcasmis\src\main" />
       <recent name="C:\Users\HP\IdeaProjects\rcasmis\src\main\webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="C:\Users\HP\IdeaProjects\rcasmis\src\main\webapp\WEB-INF" />
     </key>
   </component>
@@ -98,18 +138,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" editBeforeRun="true" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="\" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" editBeforeRun="true" APPLICATION_SERVER_NAME="Tomcat 9.0.73" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="rcasmis:war exploded">
+        <artifact name="rcamis:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/rcasmis_war_exploded" />
+            <option name="CONTEXT_PATH" value="/rcamis_war" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="b5ac1639-19d5-4866-9930-48761690acfe" />
+        <option name="HTTP_PORT" value="8070" />
       </server-settings>
       <log_file alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
       <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
@@ -182,7 +223,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="rcasmis:war exploded" />
+          <artifact name="rcamis:war" />
         </option>
       </method>
     </configuration>
@@ -221,11 +262,38 @@
       <workItem from="1682143268287" duration="6730000" />
       <workItem from="1682155378231" duration="4435000" />
       <workItem from="1682164501171" duration="1825000" />
+      <workItem from="1682492012446" duration="1493000" />
+      <workItem from="1683054778943" duration="2108000" />
+      <workItem from="1683140721328" duration="16922000" />
+      <workItem from="1683468928711" duration="719000" />
+      <workItem from="1683744608258" duration="2258000" />
+      <workItem from="1684176031770" duration="482000" />
+      <workItem from="1684210479238" duration="11118000" />
+      <workItem from="1685374067235" duration="3277000" />
+      <workItem from="1685512625920" duration="3269000" />
+      <workItem from="1685892848807" duration="139000" />
+      <workItem from="1672531342699" duration="471000" />
+      <workItem from="1686171254066" duration="253000" />
+      <workItem from="1686288295744" duration="982000" />
+      <workItem from="1686507137716" duration="440000" />
+      <workItem from="1686508358580" duration="1210000" />
+      <workItem from="1686679761395" duration="45791000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -234,11 +302,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/orm/Course.java</url>
           <line>43</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rw/ac/rca/webapp/web/Login.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

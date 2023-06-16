@@ -19,6 +19,71 @@
   </servlet-mapping>
   <servlet>
     <description></description>
+    <display-name>CreateStudent</display-name>
+    <servlet-name>CreateStudent</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.CreateStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateStudent</servlet-name>
+    <url-pattern>/createstudent.php</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreateMarks</display-name>
+    <servlet-name>CreateMarks</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.CreateMarks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateMarks</servlet-name>
+    <url-pattern>/createmark.php</url-pattern>
+  </servlet-mapping>
+  // the report
+  <servlet>
+    <description></description>
+    <display-name>StudentReportPdf</display-name>
+    <servlet-name>StudentReportPdf</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.StudentReportPdf</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentReportPdf</servlet-name>
+    <url-pattern>/studentsreportpdf.php</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>StudentReport</display-name>
+    <servlet-name>StudentReport</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.StudentReportTxt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentReport</servlet-name>
+    <url-pattern>/studentsreport.php</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>MarksReport</display-name>
+    <servlet-name>MarksReport</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.MarksReportTxt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MarksReport</servlet-name>
+    <url-pattern>/marksreport.php</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>CourseReport</display-name>
+    <servlet-name>CourseReport</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.CourseReportTxt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CourseReport</servlet-name>
+    <url-pattern>/coursesreport.php</url-pattern>
+  </servlet-mapping>
+  // end of reports
+  <servlet>
+    <description></description>
     <display-name>ListCourse</display-name>
     <servlet-name>ListCourse</servlet-name>
     <servlet-class>rw.ac.rca.webapp.web.ListCourse</servlet-class>
@@ -29,6 +94,26 @@
   </servlet-mapping>
   <servlet>
     <description></description>
+    <display-name>ListMark</display-name>
+    <servlet-name>ListMark</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.ListMark</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListMark</servlet-name>
+    <url-pattern>/listmark.php</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListEmployees</display-name>
+    <servlet-name>ListEmployees</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.ListEmployees</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListEmployees</servlet-name>
+    <url-pattern>/listemployees.php</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
     <display-name>CreateUser</display-name>
     <servlet-name>CreateUser</servlet-name>
     <servlet-class>rw.ac.rca.webapp.web.CreateUser</servlet-class>
@@ -36,6 +121,36 @@
   <servlet-mapping>
     <servlet-name>CreateUser</servlet-name>
     <url-pattern>/createuser.php</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreateParent</display-name>
+    <servlet-name>CreateParent</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.CreateParent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateParent</servlet-name>
+    <url-pattern>/createparent.php</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListStudent</display-name>
+    <servlet-name>ListStudent</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.ListStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListStudent</servlet-name>
+    <url-pattern>/liststudents.php</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListParents</display-name>
+    <servlet-name>ListParents</servlet-name>
+    <servlet-class>rw.ac.rca.webapp.web.ListParents</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListParents</servlet-name>
+    <url-pattern>/listparents.php</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>

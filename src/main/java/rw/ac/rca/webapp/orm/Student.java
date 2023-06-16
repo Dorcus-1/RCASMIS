@@ -3,6 +3,7 @@
  */
 package rw.ac.rca.webapp.orm;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -42,14 +43,18 @@ public class Student extends Person{
 	@ManyToOne
 	@JoinColumn(name = "address_id")
 	private Address address;
-	
+
+
 	public boolean isInternational() {
+
 		return isInternational;
 	}
 	public void setInternational(boolean isInternational) {
+
 		this.isInternational = isInternational;
 	}
 	public boolean isPartTime() {
+
 		return isPartTime;
 	}
 	public void setPartTime(boolean isPartTime) {

@@ -31,6 +31,8 @@ public interface UserDAO {
 	public List<User> getUserByFullName(String fullName);
 	
 	public User getUserByUserNameAndPassword(String username, String password);
+
+	public List<User> getAllEmployees();
 	
 	public User getUserByDetails(String username, String email, String password);
 	

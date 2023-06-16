@@ -1,6 +1,7 @@
 package rw.ac.rca.webapp.web;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,8 +11,11 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 
+import rw.ac.rca.webapp.dao.AddressDAO;
 import rw.ac.rca.webapp.dao.UserDAO;
+import rw.ac.rca.webapp.dao.impl.AddressDAOImpl;
 import rw.ac.rca.webapp.dao.impl.UserDAOImpl;
+import rw.ac.rca.webapp.orm.Address;
 import rw.ac.rca.webapp.orm.User;
 import rw.ac.rca.webapp.util.UserRole;
 import rw.ac.rca.webapp.util.Util;
@@ -23,6 +27,7 @@ public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public static final Logger LOG = Logger.getLogger(Login.class);
 	private UserDAO userDAO = UserDAOImpl.getInstance();
+	private AddressDAO addressDAO= AddressDAOImpl.getInstance();
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -44,6 +49,12 @@ public class Login extends HttpServlet {
 			String username = request.getParameter("username");
 			System.out.println("Session ID in welcome page >>>>>>>>: " + request.getSession().getId()
 					+ " User is >>>>: " + username);
+
+			Address address = new Address(
+
+			);
+			addressDAO.saveAddress(address);
+			List<Address> addresses = addressDAO.getAllAddresses();
 
 			request.getRequestDispatcher("WEB-INF/login.jsp").forward(request, response);
 		}

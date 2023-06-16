@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/displaytag.css" type="text/css" />
   <link rel="stylesheet" href="css/screen.css" type="text/css" />
   <link rel="stylesheet" href="css/site.css" type="text/css" />
-  <title>Course Registrations</title>
+  <title>Marks Registrations</title>
   <style>
     table {
       font-family: arial, sans-serif;
@@ -47,7 +47,7 @@
     <div class="right" style="text-align:right; background-color: #29375A;width:100%; height:40vh;  ">
       <c:if test="${authenticatedUser !=null}">
         <b> <a
-                href="listuser.php?page=profile&&id=${authenticatedUser.id}"><button>Profile
+                href="listmark.php?page=profile&&id=${authenticatedUser.id}"><button>Profile
         </button></a> | <img src="icons/cou.png" /> <font color="#ffffff">${authenticatedUser.userRole}:
             ${authenticatedUser.username}</font> | <a href="login.ap?page=logout"><font
                 color="#ffffff">Logout</font></a>
@@ -55,7 +55,7 @@
       </c:if>
       <c:if test="${authenticatedUser ==null}">
         <div class="menu" align="left">
-          | <a href="login.php?" style="font-family: 'Quicksand', sans-serif;">Login</a> |
+          | <a href="login.php?">Login</a> |
         </div>
       </c:if>
     </div>
@@ -67,60 +67,61 @@
     <c:if test="${authenticatedUser !=null}">
       <div class="options">
 
-        <a href="createcourse.php?page=createcourse"><button>
-          New Course Registration
+        <a href="createmark.php?page=createmark"><button>
+          <img src="icons/add.png" /> New Marks Registration
         </button></a>
       </div>
       <div class="search">
-<%--        <form action="listuser.php" method="get">--%>
-<%--          <table>--%>
-<%--            <tr>--%>
-<%--              <td style="color: #000000;">Enter Course ID</td>--%>
-<%--              <td><input type="text" name="id" id="id" /></td>--%>
-<%--              <td><input type='submit' name="courseSearch"--%>
-<%--                         value='search' /></td>--%>
-<%--            </tr>--%>
-<%--          </table>--%>
-<%--        </form>--%>
+        <form action="listmark.php" method="get">
+          <table>
+            <tr>
+              <td style="color: #000000;">Enter Marks ID</td>
+              <td><input type="text" name="id" id="id" /></td>
+              <td><input type='submit' name="marksSearch"
+                         value='search' /></td>
+            </tr>
+          </table>
+        </form>
       </div>
       <hr />
-          <table style="border: 0;">
-<%--              <td align="left"><input type="text" size="15"--%>
-<%--                                      maxlength="50" readonly="readonly" name="savedBy" id="savedBy"--%>
-<%--                                      hidden="hidden" value="${authenticatedUser.id}" /></td>--%>
+      <table style="border: 0;">
+        <td align="left"><input type="text" size="15"
+                                maxlength="50" readonly="readonly" name="savedBy" id="savedBy"
+                                hidden="hidden" value="${authenticatedUser.id}" /></td>
 
 
-          <table>
-            <thead>
+        <table>
+          <thead>
+          <tr>
+            <td>ID</td>
+            <td>Student</td>
+            <td>Course</td>
+            <td>Grade</td>
+            <td>Marks</td>
+            <td>Total Marks</td>
+
+
+              <%--              <td>isCancelled</td>--%>
+          </tr>
+          </thead>
+          <tbody>
+          <c:forEach items="${marks
+          }" var="mrk" varStatus="usrstatus">
             <tr>
-              <td>ID</td>
-              <td>Name</td>
-              <td>Code</td>
-              <td>Min Students</td>
-              <td>Max Students</td>
-              <td>Date Start</td>
-              <td>Date End</td>
-<%--              <td>isCancelled</td>--%>
+              <td>${mrk.marksId}</td>
+              <td>${mrk.student.getFirstName()}</td>
+              <td>${mrk.course.getName()}</td>
+              <td>${mrk.gradeGotten}</td>
+              <td>${mrk.marksScored}</td>
+              <td>${mrk.totalMarks}</td>
+                <%--                <td>${csr.isCancelled}</td>--%>
+              <td><input type="checkbox" name="usrIds"
+                         value="${mrk.marksId}"/></td>
             </tr>
-            </thead>
-            <tbody>
-            <c:forEach items="${courses}" var="csr" varStatus="usrstatus">
-              <tr>
-                <td>${csr.id}</td>
-                <td>${csr.name}</td>
-                <td>${csr.code}</td>
-                <td>${csr.minStudent}</td>
-                <td>${csr.maxStudent}</td>
-                <td>${csr.start}</td>
-                <td>${csr.end}</td>
-<%--                <td>${csr.isCancelled}</td>--%>
-                <td><input type="checkbox" name="usrIds"
-                           value="${usr.id}" /></td>
-              </tr>
-            </c:forEach>
-            </tbody>
-          </table>
-          </table>
+          </c:forEach>
+          </tbody>
+        </table>
+      </table>
     </c:if>
   </div>
-<%--<%@ include file="footer.jsp"%>--%>
+<%@ include file="footer.jsp"%>
